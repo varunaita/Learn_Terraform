@@ -19,4 +19,8 @@ provisioner "remote-exec" {
 
 }
 
+provider "aws" {
+    region = "us-east-1"
+}
+
 
