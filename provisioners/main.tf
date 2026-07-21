@@ -8,12 +8,12 @@ provisioner "remote-exec" {
     connection {
         type = "ssh"
         host = self.public_ip
-        user = ec2-user
-        password = DevOps321
+        user = "ec2-user"
+        password = "DevOps321"
 
     }
     inline = [
-        "echo hello > /root/some"
+        "echo hello >/root/some"
     ]
 }
 
